@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
+	<form method="/delete/<student_id>" action="{{url_for('student_id', student_id = student_id )}}">
+		<input type="submit" value="delete">
+	</form>
     <h1>{{ student.name }}</h1>
 	<p>
 	Student Id: {{student.student_id}}<br>

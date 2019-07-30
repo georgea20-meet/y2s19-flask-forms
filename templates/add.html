@@ -6,7 +6,9 @@
 </head>
 <body>
     <h1>Add a Student</h1>
-    <form method="post">\
+    <form method="post" action="{{url_for('add_student_route')}}">
+    	<input type="text" name="Student_name" placeholder="Your Name">
+    	<input type="text" name="Student_year" placeholder="Year">
         <br>
         <input type="submit" value="Submit">
     </form>
